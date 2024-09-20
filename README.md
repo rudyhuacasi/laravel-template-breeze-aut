@@ -172,7 +172,21 @@ return view('index', $data);
 Route::get('/', [PageController::class, 'index']);
 ```
 
-8. Resta da creare il **Model** secondo esigenze con il comando da terminale:
+8. Resta da creare il **Model** secondo esigenze con il comando da terminale te uscirà una lista di comani per chiamare migration, seeder ..., controller:
 ```
-php artisan make:model NomeModel
+php artisan make:model NomeModel --help
+
+```
+9. Questo comando serve per vedere le immagini
+```
+php artisan storage:link
+```
+10. Questo comando serve per mettere la tabella a mysql
+```
+php artisan migrate
+```
+11. Questo comando serve per mettere tutta la informazione del seeder alla tabella
+```
+php artisan db:seed --class=NombreDelSeeder
+php artisan db:seed
 ```
